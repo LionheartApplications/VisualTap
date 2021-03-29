@@ -3,33 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E0350532611BF4900641A30 /* VisualTap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E0350522611BF4900641A30 /* VisualTap.framework */; };
-		5E0350542611BF4900641A30 /* VisualTap.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5E0350522611BF4900641A30 /* VisualTap.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5E10B2032611BE39009FF14E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E10B2022611BE39009FF14E /* AppDelegate.swift */; };
 		5E10B2052611BE39009FF14E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E10B2042611BE39009FF14E /* SceneDelegate.swift */; };
 		5E10B2072611BE39009FF14E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E10B2062611BE39009FF14E /* ViewController.swift */; };
 		5E10B20A2611BE39009FF14E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E10B2082611BE39009FF14E /* Main.storyboard */; };
 		5E10B20C2611BE39009FF14E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E10B20B2611BE39009FF14E /* Assets.xcassets */; };
 		5E10B20F2611BE39009FF14E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E10B20D2611BE39009FF14E /* LaunchScreen.storyboard */; };
+		5EB6E9A526124FEE00226188 /* VisualTap in Frameworks */ = {isa = PBXBuildFile; productRef = 5EB6E9A426124FEE00226188 /* VisualTap */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		5E0350552611BF4900641A30 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				5E0350542611BF4900641A30 /* VisualTap.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5E0350522611BF4900641A30 /* VisualTap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = VisualTap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E0350532611BF4900641A30 /* VisualTap.framework in Frameworks */,
+				5EB6E9A526124FEE00226188 /* VisualTap in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,13 +89,15 @@
 				5E10B1FB2611BE39009FF14E /* Sources */,
 				5E10B1FC2611BE39009FF14E /* Frameworks */,
 				5E10B1FD2611BE39009FF14E /* Resources */,
-				5E0350552611BF4900641A30 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = VisualTapExample;
+			packageProductDependencies = (
+				5EB6E9A426124FEE00226188 /* VisualTap */,
+			);
 			productName = VisualTapExample;
 			productReference = 5E10B1FF2611BE39009FF14E /* VisualTapExample.app */;
 			productType = "com.apple.product-type.application";
@@ -369,6 +356,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5EB6E9A426124FEE00226188 /* VisualTap */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VisualTap;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5E10B1F72611BE38009FF14E /* Project object */;
 }

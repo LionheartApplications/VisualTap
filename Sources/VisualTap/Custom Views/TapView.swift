@@ -5,6 +5,8 @@
 //  Created by Stoyan Stoyanov on 29/03/21.
 //
 
+#if os(iOS)
+
 import UIKit
 import Combine
 
@@ -158,3 +160,5 @@ extension TapView {
             }
     }
 }
+
+#endif

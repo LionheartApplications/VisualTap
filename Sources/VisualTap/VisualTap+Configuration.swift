@@ -5,6 +5,8 @@
 //  Created by Stoyan Stoyanov on 29/03/21.
 //
 
+#if os(iOS)
+
 import UIKit
 import Combine
 
@@ -32,7 +34,7 @@ extension VisualTap {
         /// Sets the touch marker.
         ///
         /// Default value is: _system image named: "smallcircle.fill.circle"_
-        @Published public var image: UIImage? = .init(systemName: "smallcircle.fill.circle")
+        @Published public var image: UIImage? = UIImage(systemName: "smallcircle.fill.circle")
         
         /// Controls the visual marker size.
         @Published public var size = CGSize(width: 60.0, height: 60.0)
@@ -45,3 +47,5 @@ extension VisualTap {
         public init() { }
     }
 }
+
+#endif

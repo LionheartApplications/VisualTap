@@ -5,6 +5,9 @@
       location = "group:Example/VisualTapExample.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:">
+   </FileRef>
+   <FileRef
       location = "container:Source/VisualTap.xcodeproj">
    </FileRef>
 </Workspace>
