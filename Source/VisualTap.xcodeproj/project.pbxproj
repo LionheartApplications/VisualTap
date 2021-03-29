@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		5E0350402611BDD400641A30 /* VisualTap.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E0350322611BDD300641A30 /* VisualTap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E03507226120AC300641A30 /* UIWindow+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E03507126120AC300641A30 /* UIWindow+Helper.swift */; };
+		5E03507726120B6A00641A30 /* TapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E03507626120B6A00641A30 /* TapView.swift */; };
+		5E03507C26120BA000641A30 /* VisualTap+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E03507B26120BA000641A30 /* VisualTap+Configuration.swift */; };
+		5ECBF1D726123A3D00F01544 /* VisualTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECBF1D626123A3D00F01544 /* VisualTap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5E03502F2611BDD300641A30 /* VisualTap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VisualTap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E0350322611BDD300641A30 /* VisualTap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VisualTap.h; sourceTree = "<group>"; };
 		5E0350332611BDD300641A30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E03507126120AC300641A30 /* UIWindow+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Helper.swift"; sourceTree = "<group>"; };
+		5E03507626120B6A00641A30 /* TapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapView.swift; sourceTree = "<group>"; };
+		5E03507B26120BA000641A30 /* VisualTap+Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VisualTap+Configuration.swift"; sourceTree = "<group>"; };
+		5ECBF1D626123A3D00F01544 /* VisualTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualTap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,9 +55,29 @@
 			isa = PBXGroup;
 			children = (
 				5E0350322611BDD300641A30 /* VisualTap.h */,
+				5ECBF1D626123A3D00F01544 /* VisualTap.swift */,
+				5E03507B26120BA000641A30 /* VisualTap+Configuration.swift */,
+				5E0350682611CB1200641A30 /* Custom Views */,
+				5E03506A2611CB1C00641A30 /* Helpers */,
 				5E0350332611BDD300641A30 /* Info.plist */,
 			);
 			path = VisualTap;
+			sourceTree = "<group>";
+		};
+		5E0350682611CB1200641A30 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				5E03507626120B6A00641A30 /* TapView.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		5E03506A2611CB1C00641A30 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5E03507126120AC300641A30 /* UIWindow+Helper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +123,7 @@
 				TargetAttributes = {
 					5E03502E2611BDD300641A30 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -131,6 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E03507C26120BA000641A30 /* VisualTap+Configuration.swift in Sources */,
+				5E03507226120AC300641A30 /* UIWindow+Helper.swift in Sources */,
+				5ECBF1D726123A3D00F01544 /* VisualTap.swift in Sources */,
+				5E03507726120B6A00641A30 /* TapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +295,7 @@
 		5E0350442611BDD400641A30 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = PPF77J63K7;
@@ -279,6 +313,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,6 +322,7 @@
 		5E0350452611BDD400641A30 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = PPF77J63K7;
