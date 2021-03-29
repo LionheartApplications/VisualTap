@@ -37,13 +37,17 @@ extension VisualTap {
         @Published public var image: UIImage? = UIImage(systemName: "smallcircle.fill.circle")
         
         /// Controls the visual marker size.
+        ///
+        /// Default value is: _60 x 60_
         @Published public var size = CGSize(width: 60.0, height: 60.0)
         
         /// Shows touch duration.
+        ///
+        /// Default value is: _false_
         @Published public var showsTimer = false
         
         
-        /// Creates a new configuration container.
+        /// Creates a new configuration container with default values.
         public init() { }
     }
 }

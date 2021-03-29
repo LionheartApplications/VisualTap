@@ -34,7 +34,7 @@ extension VisualTap {
 
 // MARK: - Class Definition
 
-/// Library that allows you to visualize the screen taps of the user,
+/// Library that allows you to visualise the screen taps of the user,
 /// by drawing images on the place of the touches.
 final public class VisualTap {
     
@@ -43,7 +43,7 @@ final public class VisualTap {
     /// Default value is: `VisualTap.Configuration.default`.
     @Published public var configuration: VisualTap.Configuration = .default
     
-    /// Gives info if the VisualTap framework for visualizing the screen taps is currently enabled or not.
+    /// Gives info if the VisualTap framework for visualising the screen taps is currently enabled or not.
     public private(set) var isEnabled = false
 
     
@@ -122,7 +122,7 @@ extension VisualTap {
         }
     }
     
-    /// Removes all initialized tap views from their superviews and
+    /// Removes all initialised tap views from their superviews and
     /// also releases their references from within `tapViews` dictionary.
     private func clearAllTapViews() {
         tapViews.values.forEach { $0.removeFromSuperview() }
