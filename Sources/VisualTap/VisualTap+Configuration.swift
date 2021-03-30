@@ -48,7 +48,22 @@ extension VisualTap {
         
         
         /// Creates a new configuration container with default values.
-        public init() { }
+        ///
+        /// - Parameters:
+        ///   - tintColor: Tint color of touch marker, in case the marker is template image.
+        ///   - image: Sets the touch marker.
+        ///   - size: Controls the visual marker size.
+        ///   - showsTimer: Shows touch duration.
+        public init(tintColor: UIColor = .systemFill,
+                    image: UIImage? = UIImage(systemName: "smallcircle.fill.circle"),
+                    size: CGSize = CGSize(width: 60.0, height: 60.0),
+                    showsTimer: Bool = false) {
+     
+            self.tintColor = tintColor
+            self.image = image
+            self.size = size
+            self.showsTimer = showsTimer
+        }
     }
 }
 
